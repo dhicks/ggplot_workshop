@@ -2,7 +2,7 @@
     - Dan
     - live coding + theory
     - "basic/moderate"
-    - This outline:  <https://tinyurl.com/yb8uqo4g>
+    - This outline:  <https://tinyurl.com/ychrqybp>
 
 
 # Learning outcomes
