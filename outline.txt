@@ -1,0 +1,183 @@
+- tinyurl for this outline, Weissgerber et al. data
+- references
+
+# Welcome! 
+    - Dan
+    - live coding + theory
+    - "basic/moderate"
+
+
+# Learning outcomes
+After this workshop, you will
+    1. understand why plots are useful in EDA
+    2. understand the grammar of graphics paradigm behind ggplot2
+    3. be able to use ggplot2 in exploring your own data
+    4. know about ggplot2-related packages to explore on your own
+
+
+# 'Exploratory Data Analysis'
+Goals of EDA
+    1. Further clean your data
+    2. Start to identify *phenomena*
+    
+Hierarchies of data and models 
+    [@Suppes1962; @BogenWoodward1988; @Mayo1996; @Huebner2015]
+    theory
+            synthesis
+    phenomena
+            inferential statistics
+    clean data
+            EDA
+    raw data
+            instrument models
+    physical events
+
+Why use plots in EDA?  
+    - Datasaurus Dozen
+    - <https://github.com/stephlocke/datasauRus>
+    
+What about p-hacking?  
+    - Data science as experimental science
+        - EDA can identify *potential* phenomena
+        - need to follow up with *confirmatory research*
+        - generate new data with careful controls
+        - predesignated analysis
+    - Data science as historical science
+        - "without the ability to manipulate suspect conditions, one is at the mercy of what nature just happens to leave in her wake" [@Cleland2002]
+        - why does this phenomenon show up in these particular data?  
+        - build consilience across different historical traces
+        - look for a "smoking gun"
+
+
+# First look at Gapminder
+Read the docs! Check the str()! 
+    - What are the variables?  
+    - How are they represented?  
+    - What are their range of reasonable values?  
+    - *What makes you go "hmm"?* 
+    
+Histograms and scatterplots
+    
+    
+# The Grammar of Graphics
+    [@Wilkinson1999; but start with @Wickham2010]
+    
+Plots are functions
+      *data*  -*aes*->  *geom*
+      var1    --aes-->  x
+      var2    --aes-->  y
+      var3    --aes-->  color
+        ...
+
+Plots are functors
+
+Plots are models
+    - "All models are wrong but some are useful" - George Box
+    - How is this plot useful?  (Useful for *what*?)
+    - How is this plot wrong? 
+
+The grammar of graphics and ggplot2
+
+
+# Catalog of geoms
+
+## 0d geoms
+- point
+    - jitter
+- rug
+- text, label
+
+Aesthetics
+- x, y
+- color
+- size
+- shape
+- alpha
+
+## Scales and transforms
+    - logs
+    - Brewer
+
+## 1d geoms
+- line
+    - path
+    - step
+- hline, vline
+
+New aesthetics
+- linetype
+- group
+
+## Facets
+
+## Distributions and summaries
+x-axis is continuous
+    - histogram
+    - density
+    - stat_ecdf
+
+x-axis is categorical
+        - reorder    
+    - bar
+    - boxplot
+    - violin
+
+linerange & stat_summary
+    - linerange
+        - errorbar
+        - pointrange
+        - crossbar
+    - stat_summary calculates summary values at each value of y
+        - mean, median
+        - sd, se, max, min
+        - geom = 'linerange'
+
+2D distributions
+    - bin2d
+    - hex
+    - density2d
+
+
+# Barcharts = bad charts
+Weissgerber et al.
+    <http://dx.doi.org/10.1371/journal.pbio.1002128>
+
+`bar_plots_data.Rda`
+    Bar plot + error bars
+    point and dotplot
+    density
+
+
+# Smoothing
+
+
+# ggplot2 and other packages
+tidyverse
+    - correlation heatmap
+
+ggplot2 extensions
+    - many lots!  
+        <https://cran.r-project.org/web/packages/ggplot2/index.html>
+
+    - ggraph - networks, hierarchical clustering
+    - ggridges - ridgeline plots
+    - ggalluvial - alluvial plots / Sankey diagrams
+    - Spatial data
+        - NB Dan doesn't know much about spatial data
+        - <https://duckduckgo.com/?q=ggplot+spatial+data&atb=v17>
+        - <http://strimas.com/r/tidy-sf/>
+        - leaflet
+
+    - directlabels - label colors directly in plots
+    - ggsci - color palettes for several major scientific journals
+
+    - GGally::ggpairs() - quasi-GG pair plots
+    - multiple plots
+        - cowplot
+        - <http://github.com/thomasp85/patchwork>
+        - egg 
+        - gridExtra
+
+plotly::ggplotly()
+    - text aesthetic
+
