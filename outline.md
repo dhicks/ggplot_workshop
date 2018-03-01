@@ -84,8 +84,8 @@ The grammar of graphics and ggplot2
 ## 0d geoms
 - point
     - jitter
-- rug
 - text, label
+- rug
 
 Aesthetics
 - x, y
@@ -100,7 +100,7 @@ Aesthetics
 
 ## 1d geoms
 - line
-    - path
+    - path - Haiti
     - step
 - hline, vline
 
