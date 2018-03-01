@@ -2,6 +2,7 @@
     - Dan
     - live coding + theory
     - "basic/moderate"
+    - This outline:  <https://tinyurl.com/yb8uqo4g>
 
 
 # Learning outcomes
@@ -142,6 +143,7 @@ linerange & stat_summary
     <http://dx.doi.org/10.1371/journal.pbio.1002128>
 
 `bar_plots_data.Rda`
+    <https://tinyurl.com/y832p845>
     Bar plot + error bars
     point and dotplot
     density
