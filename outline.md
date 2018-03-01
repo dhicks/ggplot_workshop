@@ -186,7 +186,7 @@ plotly::ggplotly()
 # References
 [@BogenWoodward1988] Bogen, James, and James Woodward. 1988. “Saving the Phenomena.” The Philosophical Review 97 (3): 303–52.
 
-[@Cleland2002] Cleland, Carol E. 2002. “Methodological and Epistemic Differences between Historical Science and Experimental Science*.” Philosophy of Science 69 (3): 447–51. https://doi.org/10.1086/342455.
+[@Cleland2002] Cleland, Carol E. 2002. “Methodological and Epistemic Differences between Historical Science and Experimental Science*.” Philosophy of Science 69 (3): 447–51. https://doi.org/10.1086/342455.
 
 [@Mayo1996] Mayo, Deborah G. 1996. Error and the Growth of Experimental Knowledge. Science and Its Conceptual Foundations. Chicago: University of Chicago Press.
 
