@@ -1,5 +1,6 @@
 # Welcome! 
-    - Dan
+    - Dan Hicks
+    - <djhicks@ucdavis.edu>
     - live coding + theory
     - "basic/moderate"
     - This outline:  <https://tinyurl.com/ychrqybp>
